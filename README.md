@@ -9,13 +9,13 @@ The technical exercise is to implement a service that takes data from the [PokeA
 
 The exercise is split into two different areas *backend* and *frontend* witch use a number of open source projects:
 
-#####Backend 
+#### Backend 
 * [NodeJS] - Evented I/O for the backend
 * [Express] - A simple and fast node.js network app framework
 * [Mocha] - A framework for node.js testing
 * [Chai] - A BDD/TBB assertion library for node.js
 
-#####Frontend 
+#### Frontend 
 * [Angular] - HTML enhanced for web apps
 * [Material] - Material Design components for Angular
 * [Karma] - Spectacular Test Runner for JavaScript
@@ -26,7 +26,7 @@ The exercise is split into two different areas *backend* and *frontend* witch us
 
 The system requires Node 11.10.0
 
-#####Backend 
+##### Backend 
 ```sh
 $ cd backend
 $ npm install -d
@@ -34,7 +34,7 @@ $ npm run start
 ```
 
 
-#####Frontend
+##### Frontend
 ```sh
 $ cd frontend
 $ npm install -d
