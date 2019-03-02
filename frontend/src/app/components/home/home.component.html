@@ -1,3 +1,14 @@
 <p>
-  home works!
+  Total pokemons: {{totalPokemons}}
 </p>
+
+
+<table *ngIf="pokemons">
+  <tr>
+    <th>ID</th><th>Pokemon Name</th>
+  </tr>
+  <tr *ngFor="let pokemon of pokemons; let idx = index">
+    <td>{{ idx + 1 }}</td>
+    <td>{{ pokemon.name }}</td>
+  </tr>
+</table>

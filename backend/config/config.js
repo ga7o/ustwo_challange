@@ -7,11 +7,13 @@
 
 module.exports = {
     appUrl: 'localhost',
-    port: '3000'
+    port: '3000',
 
     // TODO: Add other required connections
 
     // External API's connection
+
+    pokeAPIURL: 'https://pokeapi.co/api/v2/'
 
 
 }

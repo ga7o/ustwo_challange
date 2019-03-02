@@ -1,9 +1,16 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+var indexRouter = require('./src/routes/index')
+
+
+/*app.get('/', (req, res) => {
     res.send('Hello World!');
-});
+});*/
+
+app.use('/', indexRouter)
 
 const server = app.listen(8080, () => {
     const host = server.address().address;

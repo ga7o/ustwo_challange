@@ -7,6 +7,7 @@
 
 export class Pokemon {
 
+
     //TODO: implement the pokemon resources based on the request
     // https://pokeapi.co/api/v2/pokemon/ditto/
     /*

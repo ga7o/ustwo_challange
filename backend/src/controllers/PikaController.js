@@ -1,6 +1,7 @@
 'use strict';
+var request = require('request');
 
-import {PikaAPIService} from '../services/pikaAPIService'
+var config = require('../../config/config')
 
 /**
  * Pika Controller
@@ -8,6 +9,23 @@ import {PikaAPIService} from '../services/pikaAPIService'
  * requested environment
  */
 
-export class PikaController {
+exports.index = function (req, res) {
 
+    let urlForAllPokemons = config.pokeAPIURL+'pokemon?limit=1000'
+
+    request.get(urlForAllPokemons, function (err, req, body) {
+        if(err){
+            res.send('Error !! ', err)
+        }
+        if(res.statusCode !== 200){
+            res.send('Status Code !! ', res.statusCode)
+        }
+        else {
+            console.log('Body ', JSON.parse(body))
+
+            res.setHeader('Content-Type', 'application/json');
+            res.end(body);
+
+        }
+    })
 }
